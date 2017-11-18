@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+	width: vh;
+	background: url(meurosto.png);
+	color: #ffffff;
+	font-size: small;
+    font-family: Verdana, Geneva, Arial, sans-;
+	text-shadow: 3px 0px 0px black, 
+                 -3px 0px 0px black, 
+                 0px 3px 0px black, 
+                 0px -3px 0px black;
+   
+    font-weight: bold;
+    
+		
+}
+
+main{
+	text-align: center;
+	font-size: 80px;
+	
+	
+}
+header{
+	text-align: center;
+	
+}
+
+
+audio{
+	
+	display: none;
+	
+}
