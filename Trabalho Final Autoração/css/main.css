@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+	width:100%;
+	background: url(entulho1.jpg);
+	color: #ffffff;
+	font-size: small;
+    font-family: Verdana, Geneva, Arial, sans-;
+		
+}
+
+header{
+	text-align: center;
+	
+}
+
+form{
+	margin: 300px;
+	text-align: center;
+	
+    
+	
+}
+
+
+#email{
+	padding:0px;
+	margin:10px;
+
+	
+}
+
+#senha{
+	padding:0px;
+	margin:10px;
+	
+	
+	
+}
+
+#botao{
+	padding:0px;
+	margin:10px;
+	text-align: center;
+	
+	
+}
+
