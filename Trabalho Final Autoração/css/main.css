@@ -30,7 +30,13 @@ img{
 	
 }
 	
-	 
+.luxo {
+	
+	padding: 40px;
+	width: 300px; 
+	height: 600px;
+	
+} 
 
 
 .prateleiras div{
@@ -69,13 +75,7 @@ padding-left:35px; /* Espaçamento do texto a esquerda */
 
 
 
-.luxo {
-	
-	padding: 40px;
-	width: 300px; 
-	height: 600px;
-	
-}
+
 
 #senha{
 	padding:0px;
