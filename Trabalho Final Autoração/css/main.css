@@ -14,7 +14,11 @@ header{
 	text-align: center;
 	
 }
-
+main{
+margin: 0 auto;
+width: 90%;
+	
+}
 form{
 	/*margin: 0 auto;*/
 	margin: 100px;
@@ -53,14 +57,14 @@ img{
 .prateleiras h3{
 	
 	 
-/*margin: 0 auto;*/
-width:260px; /* Largura total - Se você omitir ocupará toda a linha */
-font: 25px Arial, Helvetica, sans-serif; /* Tamanho e família de fontes */
-color: #000; /* Cor da fonte */
-background: #FFF; 
-/*Ver Nota*/
 
-padding-left:35px; /* Espaçamento do texto a esquerda */
+width:260px; 
+font: 25px Arial, Helvetica, sans-serif; 
+color: #000; 
+background: #FFF; 
+
+
+padding-left:35px; 
 	
 }
 
