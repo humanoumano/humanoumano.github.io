@@ -50,7 +50,8 @@ img{
 }
 
 .prateleiras div div{
-	background: #000;
+	background: rgba(250, 0, 0, 0.3);
+	
 	
 }
 
