@@ -6,6 +6,7 @@ body{
 	color: #ffffff;
 	font-size: small;
     font-family: Verdana, Geneva, Arial, sans-;
+	margin: 0 auto;
 		
 }
 
@@ -22,7 +23,12 @@ form{
     
 }
 
-
+img{
+	
+	width: 300px;
+	height:300px;
+	
+}
 	
 	 
 
@@ -35,11 +41,14 @@ form{
 
 .prateleiras div div{
 	background: #000;
-	 
+	
 }
 
 .prateleiras h3{
-width:300px; /* Largura total - Se você omitir ocupará toda a linha */
+	
+	 
+/*margin: 0 auto;*/
+width:260px; /* Largura total - Se você omitir ocupará toda a linha */
 font: 25px Arial, Helvetica, sans-serif; /* Tamanho e família de fontes */
 color: #000; /* Cor da fonte */
 background: #FFF; 
@@ -58,15 +67,10 @@ padding-left:35px; /* Espaçamento do texto a esquerda */
 
 }
 
-img{
-	
-	width: 300px;
-	height:300px;
-	
-}
+
 
 .luxo {
-	margin: 0 auto;
+	
 	padding: 40px;
 	width: 300px; 
 	height: 600px;
