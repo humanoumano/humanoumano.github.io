@@ -35,12 +35,15 @@ img{
 }
 
 
+
 	
 .luxo {
 	
 	padding: 40px;
 	width: 300px; 
 	height: 600px;
+	position: absolute;
+	left: 160px;
 	
 } 
 
@@ -72,7 +75,15 @@ padding-left:35px;
 }
 
 
-
+#descr{
+	padding: 40px;
+	width: 600px;
+	background: rgba(250, 0, 0, 0.3);
+	position: absolute;
+	top: 169px;
+	left: 40vw;
+	
+}
 
 #email{
 	padding:0px;
