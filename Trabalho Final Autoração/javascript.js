@@ -1,3 +1,7 @@
+
+var comprados = 0;
+
+
 function validacao() {
 
 	if(document.form.senha.value=="" || document.form.nome.value==""){
@@ -16,5 +20,21 @@ function validacao() {
 		document.form.senha.focus();
 		return false;
 	}
+	
+}
+
+ $( function() {
+				$( "#luxo" ).accordion();
+				$( "#entulho" ).accordion();
+				$( "#outrolixo" ).accordion();
+				
+				
+			  } );
+
+			  
+function comprar(){
+	
+	comprados = comprados +1;
+	
 	
 }
