@@ -1,5 +1,7 @@
 
-var comprados = 0;
+var compradosLixeira = 0;
+var compradosLixo = 0;
+var compradosLuxo = 0;
 
 
 function validacao() {
@@ -32,9 +34,20 @@ function validacao() {
 			  } );
 
 			  
-function comprar(){
+function comprarLixeira(){
 	
-	comprados = comprados +1;
+	compradosLixeira = compradosLixeira +1;
 	
+	}
 	
-}
+function comprarLixo(){
+	
+	compradosLixo = compradosLixo +1;
+	
+	}
+	
+function comprarLuxo(){
+	
+	compradosLuxo = compradosLuxo +1;
+	
+	}
