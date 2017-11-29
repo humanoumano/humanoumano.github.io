@@ -6,6 +6,32 @@
 			<script src="jquery-3.2.1.min.js"></script>
 			<script src="jquery-ui.js"></script>
 			<script src="javascript.js"></script>  
+			<script>
+				function doFirst(){
+	
+				var button = document.getElementById('button');
+				button.addEventListener("click", save, false);
+								
+								
+				}
+						
+			function save(){
+				
+				var key = document.getElementById('key').value;
+				var value = document.getElementById('value').value;
+				sessionStorage.setItem(key,value);
+				key.value ="";		
+				value.value="";
+								}
+								
+			window.addEventListener("load", doFirst, false);
+				
+				
+				
+				
+			
+			
+			</script>
 		<head>
 		
 		<body>
@@ -15,13 +41,19 @@
 
 			</header> 
 			
-			
-				<form  name="form"  method="post" action ="pages/luxo.html" onSubmit="return validacao();">
-					Nome: <input type="text" name="nome"/> <br> </br>
-					Senha: <input type="password" name="senha"/> <br> </br>
-					<input type="submit" name="submit" value ="Enviaar" />
-				</form>
+				<section id = "box">
+					<form  name="form"  method="post" action ="pages/luxo.html"  onSubmit="return validacao(); ">
+						Nome: <input type="text" name="nome" id = "key"/> <br> </br>
+						Senha: <input type="password" name="senha" id="value" /> <br> </br>
+						<input type="submit" name="submit" id="button" value ="Enviaar" />
+						<a href="javascript:clear()"> Clear Items </a>
+					</form>
+				</section>
+				<section id="display_data">
 				
+				
+				
+				</section>
 			
 		<body>
 		

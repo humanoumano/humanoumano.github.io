@@ -23,6 +23,9 @@ function validacao() {
 	
 }
 
+
+				
+
 setInterval(draw(), 200);
 
 function draw(){
@@ -43,6 +46,7 @@ function draw(){
 			  } );
 
 }
+
 function comprarLixeira(){
 	
 	compradosLixeira = compradosLixeira +1;
@@ -68,6 +72,8 @@ function efetuarCompra(){
 	 compradosLixeira = 10;
 	 compradosLixo = 10;
 	 compradosLuxo = 10;
+	 localStorage.clear();
+		location.reload();
 					
 	}
 

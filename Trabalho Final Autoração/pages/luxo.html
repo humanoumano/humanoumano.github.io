@@ -6,7 +6,29 @@
 			<script src="../jquery-3.2.1.min.js"></script>
 			<script src="../jquery-ui.js"></script>
 			<script src="../javascript.js"></script>  
+			<script>
+			function doFirst(){
+	
+				var button = document.getElementById('button');
+				button.addEventListener("click", save, false);
+								
+								
+				}
+						
+			function save(){
+				
+				var key = 'valor comprado de luxo';
+				var value = compradosLuxo;
+				localStorage.setItem(key,value);
+				key.value ="";		
+				value.value="";
+								}
+								
+			window.addEventListener("load", doFirst, false);
+				
 			
+			
+			</script>
 
 		</head>
 		
@@ -43,7 +65,7 @@
 				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
 				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
 				</p>
-				<input type="submit" name="comprar" value ="comprar" onClick="comprarLuxo();"/>
+				<input type="submit" name="comprar" value ="comprar" id = "button" onClick="comprarLuxo();"/>
 			  </div>
 			  
 			  <h3>Section 2</h3>
@@ -55,7 +77,7 @@
 				velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
 				suscipit faucibus urna.
 				</p>
-				<input type="submit" name="comprar" value ="comprar" onClick="comprarLuxo();"/>
+				<input type="submit" name="comprar" value ="comprar" id = "button" onClick="comprarLuxo();"/>
 			
 			  </div>
 			  <h3>Section 3</h3>
@@ -67,7 +89,7 @@
 				ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
 				lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
 				</p>
-				<input type="submit" name="comprar" value ="comprar" onClick="comprarLuxo();"/>
+				<input type="submit" name="comprar" value ="comprar" id = "button" onClick="comprarLuxo();"/>
 				</div>
 				 </div>
 				 
