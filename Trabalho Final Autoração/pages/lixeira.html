@@ -17,11 +17,13 @@
 						
 			function save(){
 				
-				var key = 'valor comprado de lixeiras';
-				var value = compradosLixeira;
-				localStorage.setItem(key,value);
-				key.value ="";		
-				value.value="";
+				var lixeira = 'lixeiras';
+				var comprandoLixeria = compradosLixeira;
+				sessionStorage.setItem(lixeira, comprandoLixeria);
+				lixeira.value ="";		
+				comprandoLixeria.value="";
+				
+				carrinhoLixeira = sessionStorage.getItem('lixeira');
 								}
 								
 			window.addEventListener("load", doFirst, false);

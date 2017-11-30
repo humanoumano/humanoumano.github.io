@@ -2,6 +2,13 @@ var compradosLixeira = 0;
 var compradosLixo = 0;
 var compradosLuxo = 0;
 
+var carrinhoLixo = sessionStorage.getItem('lixo');
+var carrinhoLuxo = sessionStorage.getItem('luxo');
+var carrinhoLixeira = sessionStorage.getItem('lixeiras');
+
+
+
+
 function validacao() {
 
 	if(document.form.senha.value=="" || document.form.nome.value==""){
@@ -30,15 +37,16 @@ setInterval(draw(), 200);
 
 function draw(){
 
+
  $( function() {
 				$( "#luxo" ).accordion();
 				$( "#entulho" ).accordion();
 				$( "#outrolixo" ).accordion();
 				
 				
-				$('#carroLuxo').text('Luxos acumulados: ' +compradosLuxo);
-				$('#carroLixeira').text('Lixeiras acumuladas: ' +compradosLixeira);
-				$('#carroLixo').text('Lixo acumulado: ' +compradosLixo);
+				$('#carroLuxo').text('Luxos acumulados: ' +carrinhoLuxo);
+				$('#carroLixeira').text('Lixeiras acumuladas: ' +carrinhoLixeira);
+				$('#carroLixo').text('Lixo acumulado: ' +carrinhoLixo);
 				
 				
 	

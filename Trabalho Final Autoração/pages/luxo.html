@@ -17,11 +17,14 @@
 						
 			function save(){
 				
-				var key = 'valor comprado de luxo';
-				var value = compradosLuxo;
-				localStorage.setItem(key,value);
-				key.value ="";		
-				value.value="";
+				var luxo = 'luxo';
+				var comprandoLuxo = compradosLuxo;
+				sessionStorage.setItem(luxo,comprandoLuxo);
+				luxo.value ="";		
+				comprandoLuxo.value="";
+				
+				carrinhoLuxo = sessionStorage.getItem('luxo');
+				
 								}
 								
 			window.addEventListener("load", doFirst, false);

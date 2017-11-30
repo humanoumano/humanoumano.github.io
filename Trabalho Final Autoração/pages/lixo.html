@@ -17,11 +17,12 @@
 						
 			function save(){
 				
-				var key = 'valor comprado de lixo';
-				var value = compradosLixo;
-				localStorage.setItem(key,value);
-				key.value ="";		
-				value.value="";
+				var lixo = 'lixo';
+				var comprandoLixo = compradosLixo;
+				sessionStorage.setItem(lixo,comprandoLixo);
+				lixo.value ="";		
+				comprandoLixo.value="";
+				carrinhoLixo = sessionStorage.getItem('lixo');
 								}
 								
 			window.addEventListener("load", doFirst, false);
