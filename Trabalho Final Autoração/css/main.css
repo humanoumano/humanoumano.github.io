@@ -62,7 +62,7 @@ input{
 
 .prev,.next{
 	float: left;
-	margin-top:130px;
+	margin-top:10px;
 	cursor: pointer;
 	
 	
@@ -71,16 +71,17 @@ input{
 .prev{
 	
 	position: relative;
-	margin-right: -45px;
+	margin-right: -34px;
 	z-index:100;
 	
 	
 }
 
-.prev{
+.next{
+	
 	position: relative;
-	margin-left: -45px;
-	z-index:100;
+	margin-left: 230px;
+	z-index:10;
 	
 	
 }

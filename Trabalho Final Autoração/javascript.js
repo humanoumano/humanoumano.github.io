@@ -38,7 +38,7 @@ setInterval(draw(), 200);
 function draw(){
 
 
- $( function() {
+ $(document).ready( function() {
 				$( "#luxo" ).accordion();
 				$( "#entulho" ).accordion();
 				$( "#outrolixo" ).accordion();
@@ -48,7 +48,29 @@ function draw(){
 				$('#carroLixeira').text('Lixeiras acumuladas: ' +carrinhoLixeira);
 				$('#carroLixo').text('Lixo acumulado: ' +carrinhoLixo);
 				
-				 
+				$('.next').on('click', function(){
+					var currentImg = $('.active');
+					var nextImg = currentImg.next();
+					
+					if(nextImg.length){
+						currentImg.removeClass('active').css('z-index', -10);
+						nextImg.addClass('active').css('z-index', 10);
+						
+					}
+					
+				});
+				
+				$('.prev').on('click', function(){
+					var currentImg = $('.active');
+					var prevImg = currentImg.prev();
+					
+					if(prevImg.length){
+						currentImg.removeClass('active').css('z-index', -10);
+						prevImg.addClass('active').css('z-index', 10);
+						
+					}
+					
+				});
 	
 				
 			  } );
