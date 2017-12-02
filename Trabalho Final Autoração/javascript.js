@@ -39,15 +39,34 @@ function draw(){
 
 
  $(document).ready( function() {
+	 
+				//Funçoes para lightbox
+				$('.lightbox').click(function(){
+					$('.background, .box').animate({'opacity':'.40'},500,'linear');
+					$(' .box').animate({'opacity':'1.00'},500,'linear');
+					$('.background, .box').css('display', 'block');
+						
+						
+					});
+					
+				$('.close').click(function(){
+					$('.background, .box').animate({'opacity':'0'},500,'linear', function(){
+						$('.background, .box').css('display', 'none');
+						
+					});
+					});
+					
+				 //implementação do accordion
 				$( "#luxo" ).accordion();
 				$( "#entulho" ).accordion();
 				$( "#outrolixo" ).accordion();
 				
-				
+				//visualização do carrinho
 				$('#carroLuxo').text('Luxos acumulados: ' +carrinhoLuxo);
 				$('#carroLixeira').text('Lixeiras acumuladas: ' +carrinhoLixeira);
 				$('#carroLixo').text('Lixo acumulado: ' +carrinhoLixo);
 				
+				//implementação do slider de imagens
 				$('.next').on('click', function(){
 					var currentImg = $('.active');
 					var nextImg = currentImg.next();
@@ -69,9 +88,10 @@ function draw(){
 						prevImg.addClass('active').css('z-index', 10);
 						
 					}
+					});
 					
-				});
-	
+				
+		
 				
 			  } );
 
