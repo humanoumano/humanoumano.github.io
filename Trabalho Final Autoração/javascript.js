@@ -48,7 +48,7 @@ function draw(){
 				$('#carroLixeira').text('Lixeiras acumuladas: ' +carrinhoLixeira);
 				$('#carroLixo').text('Lixo acumulado: ' +carrinhoLixo);
 				
-				
+				 
 	
 				
 			  } );
