@@ -1,11 +1,92 @@
 var compradosLixeira = 0;
 var compradosLixo = 0;
-var compradosLuxo = 0;
+var compradosLuxo =0;
+
+var historicoLuxo = localStorage.getItem('LuxosComprados');
+var historicoLixo = localStorage.getItem('LixosComprados');
+var historicoLixeira = localStorage.getItem('LixeirasComprados');
+
+
+
 
 var carrinhoLixo = sessionStorage.getItem('lixo');
 var carrinhoLuxo = sessionStorage.getItem('luxo');
 var carrinhoLixeira = sessionStorage.getItem('lixeiras');
 
+if( carrinhoLuxo != null ){
+	
+	compradosLuxo = parseInt(sessionStorage.getItem('luxo'));
+}
+
+if( carrinhoLixo != null ){
+	
+	compradosLixo = parseInt(sessionStorage.getItem('lixo'));
+}
+
+if( carrinhoLixeira != null ){
+	
+	compradosLixeira = parseInt(sessionStorage.getItem('lixeiras'));
+}
+
+
+	
+function efetuarCompra(){
+	
+	 alert( "Parabéns você comprou"  );
+	 
+	
+
+	
+	location.reload();
+	var key = 'LuxosComprados';
+	var value = carrinhoLuxo;
+	localStorage.setItem(key,value);
+	
+	
+	
+	var key = 'LixosComprados';
+	var value = carrinhoLixo;
+	localStorage.setItem(key,value);
+	
+	
+	
+	var key = 'LixeirasComprados';
+	var value = carrinhoLixeira;
+	localStorage.setItem(key,value);
+	
+	 sessionStorage.clear();				
+	}
+
+function salvarCompra(){
+	
+	
+	
+}
+
+/*var User = function(nome, senha){
+ this.nome = nome;
+ this.senha = senha; 
+ 
+ this.historico = function(){
+	 
+	 
+ }
+	
+};
+	var user =  new Array();
+	user[0] = new User();
+	user[0].senha = localStorage.getItem('senha');
+	var teste;
+	teste = localStorage.getItem('senha');
+	user[0].nome = localStorage.getItem('user');
+		
+	if(	teste ==  user[0].senha){
+		
+		console.log(" senha errada");
+	}
+	
+	
+*/
 
 
 
@@ -66,6 +147,10 @@ function draw(){
 				$('#carroLixeira').text('Lixeiras acumuladas: ' +carrinhoLixeira);
 				$('#carroLixo').text('Lixo acumulado: ' +carrinhoLixo);
 				
+				$('#historicoLuxo').text('Luxos comrpados: ' +historicoLuxo);
+				$('#historicoLixo').text('Lixos comprados: ' +historicoLixo);
+				$('#historicoLixeira').text('Lixeira compradas: ' +historicoLixeira);
+				
 				//implementação do slider de imagens
 				$('.next').on('click', function(){
 					var currentImg = $('.active');
@@ -96,6 +181,14 @@ function draw(){
 			  } );
 
 }
+function novoUser(){
+	
+	newUser = newUser +1;
+	
+	}
+
+
+
 
 function comprarLixeira(){
 	
@@ -105,7 +198,7 @@ function comprarLixeira(){
 	
 function comprarLixo(){
 	
-	compradosLixo = compradosLixo +1;
+	compradosLixo = compradosLuxo +1;
 	
 	}
 	
@@ -113,18 +206,6 @@ function comprarLuxo(){
 	
 	compradosLuxo = compradosLuxo +1;
 	
-	}
-	
-function efetuarCompra(){
-	
-	 alert( "Parabéns você comprou"  );
-	 
-	 compradosLixeira = 10;
-	 compradosLixo = 10;
-	 compradosLuxo = 10;
-	 localStorage.clear();
-		location.reload();
-					
 	}
 
 	

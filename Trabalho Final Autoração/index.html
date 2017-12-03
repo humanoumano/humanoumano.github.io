@@ -16,10 +16,22 @@
 				}
 						
 			function save(){
+				/*var key = 'novoUsuario';
+				var value = newUser;
+				localStorage.setItem(key, newUser);
+				lixeira.value ="";		
+				comprandoLixeria.value="";
+				quantUser = localStorage.getItem('novoUsuario');*/
+			
+				var key = 'user';
+				var value = document.getElementById('key').value;
+				localStorage.setItem(key,value);
+				key.value ="";		
+				value.value="";
 				
-				var key = document.getElementById('key').value;
+				var key = 'senha';
 				var value = document.getElementById('value').value;
-				sessionStorage.setItem(key,value);
+				localStorage.setItem(key,value);
 				key.value ="";		
 				value.value="";
 								}
@@ -45,8 +57,8 @@
 					<form  name="form"  method="post" action ="pages/luxo.html"  onSubmit="return validacao(); ">
 						Nome: <input type="text" name="nome" id = "key"/> <br> </br>
 						Senha: <input type="password" name="senha" id="value" /> <br> </br>
-						<input type="submit" name="submit" id="button" value ="Enviaar" />
-						<a href="javascript:clear()"> Clear Items </a>
+						<input type="submit" name="submit" id="button" value ="Enviaar" onCLick = "cadastrarUser();" />
+						
 					</form>
 				</section>
 				<section id="display_data">
