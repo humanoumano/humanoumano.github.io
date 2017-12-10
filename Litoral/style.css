@@ -1,14 +1,23 @@
 @charset "UTF-8";
-
+body{
+	width: vh;
+	background: url(A1.gif);
+	
+}
 #grade{
 	
 	text-align: center;
 }
 
+#a1{
+	opacity: 1.0;
+	
+}
+
 iframe{
 	width: 400px;
 	height: 400px;
-	
+	 opacity: 0.4;
 	
 	border: 0px;
 	
