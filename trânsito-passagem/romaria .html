@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="jquery-3.2.1.min.js"></script>
+	<script>
+	
+
+
+
+
+		
+	$(document).ready(function(){
+	
+
+		
+	
+	
+
+	
+      $( "#a1" ).click(function() {
+		 $("#f1").text("A paisagem árida do sertão carrega uma memória que meu corpo não pode esquecer " );
+		 $("#f2").text(" Grande parte da minha infância está coberta de terra " );
+		 $("#f3").text("E sempre quando faço esse percurso sinto a terra prendendo minha respiração ");
+		 $("#f4").hide();
+		 
+		 $("#a1").hide();
+		 
+		 
+		 
+		});
+		
+		
+		$( "#a2" ).click(function() {
+		 $("#f1").text("Não consigo fixar o meu olhar em nenhuma árvore, tudo parece passado " );
+		 $("#f2").text(" Até o processo parece se perder " );
+		 $("#f3").text("Esse lance de viajar é muito louco, um estado contínuo de trânsito, um não lugar constante ");
+		 $("#f4").hide();
+		 
+		 $("#a2").hide();
+		 
+		 
+		 
+		});
+	  
+	  $( "#a3" ).click(function() {
+		 $("#f1").text("Fecho minhas pálpebras lentamente " );
+		 $("#f2").text(" Bloquear minha vista apenas realça minha memória " );
+		 $("#f3").text("O meu passado latente, o presente em minha pele, o futuro nessa ânsia, mas eu ainda posso dormir ");
+		 $("#f4").hide();
+		 
+		 
+		  $("#a3").hide();
+		  $("#a1").hide();
+		 $("#a2").hide();
+		
+		   $("#a4").show();
+		  $("#a5").show();
+		 $("#a6").show();
+		
+		 
+		 });
+		 
+		 $( "#a4" ).click(function() {
+		 $("#f1").text("Eu não sei bem qual foi a primeira vez que me feri em arame farpado " );
+		 $("#f2").text(" Eu brincava no meio do mato e lembro que queria fugir de todas as marcas que me tornavam urbano " );
+		 $("#f3").text("Eu queria ser como meus primos que não tinham medo de ferir a pele enquanto atravessavam as fronteiras dos terrenos alheios");
+		 $("#f4").hide();
+		 
+		$("#a2").hide();
+		 $("#a1").hide();
+		 $("#a3").hide();
+		 $("#a4").hide()
+		 $("#a6").hide()
+		 
+		 
+		 
+		});
+	  
+	   $( "#a5" ).click(function() {
+		 $("#f1").hide();
+		 $("#f2").hide();
+		 $("#f3").hide();
+		 $("#f4").hide();
+		 
+		 $("#a2").hide();
+		 $("#a1").hide();
+		 $("#a3").hide();
+		 $("#a4").hide();
+		 $("#a5").hide();
+		 $("#a6").hide();
+		 
+		 
+		 
+		});
+		
+		$( "#a6" ).click(function() {
+		 $("#f1").text("Nunca tive a sensação plena de viver o agora");
+		 $("#f2").text("Tudo que sinto vira memória no mesmo instante do tato");
+		 $("#f3").text("Eu queria poder sustentar apenas um momento");
+		 $("#f4").hide("Mas tudo agora é passado");
+		 
+		 $("#a2").hide();
+		 $("#a1").hide();
+		 $("#a3").hide();
+		 $("#a4").hide();
+		
+		 $("#a6").hide();
+		 
+		 
+		 
+		});
+	  
+	  
+	});
+	
+	
+	
+	</script>
+	
+
+</head>
+
+<body>
+<h1 id="f1"> Viajo para o interior </h1>
+
+
+<h1 id="f2"> Todo fim de ano</h1>
+<h1 id="f3"> Hoje viajo de ônibus  </h1>
+<h1 id="f4"> Olho para a janela e vejo o tempo passar  </h1>
+
+
+<main>
+<input type="submit"  id="a1" value ="Respirar fundo" onCLick = "cadastrarUser();" />
+<input type="submit"  id="a2" value ="Observar atentamente a paisagem" onCLick = "cadastrarUser();" />
+<input type="submit"  id="a3" value ="Tentar dormir" onCLick = "cadastrarUser();" />
+
+<input type="submit"  id="a4" value ="Arame farpado" onCLick = "cadastrarUser();" />
+<input type="submit"  id="a6" value ="Agora" onCLick = "cadastrarUser();" />
+<input type="submit"  id="a5" value ="Passagem" onCLick = "cadastrarUser();" />
+
+
+</main>
+ <video autoplay loop class="bg_video">
+  <source src="romaria_1.mp4" type="video/mp4">
+
+
+</video> 
+
+<audio controls autoplay loop  id="myaudio">
+ <source src="romaria.mp3" type="audio/mpeg">
+
+</audio>
+
+<header id="grade">
+
+
+</header>
+</body>
+
+
+</html>
