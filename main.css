@@ -6,31 +6,48 @@ header{
 	
 	
 }
-
-#menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-	width: 70%;
-	margin: 0 auto;
+main{
+	font-family: monospace;
+	
+	
+}
+#descr{
+	float: left;
+	margin: 30px;
+	width: 50%;
+	/*background: #f0f0ca;*/
+	left: 9vw;
+	position: absolute;
 }
 
-#menu ul li { display: inline; }
-
-#menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
+#menulateral{
+	width: 20%;
+	float: right;
+	margin: 30px;
+	left: 62vw;
+	position: absolute;
+	text-align: center;
+	/*background: #f0f0ca*/
 }
 
-#menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
+
+a.linklateral:link {
+color:#999999;
+text-decoration:none;
 }
+a.linklateral:visited {
+color:#000000;
+text-decoration:none;
+}
+a.linklateral:hover {
+color:#000000;
+text-decoration:underline;
+}
+a.linklateral:active {
+color:#00FF00;
+text-decoration:underline;
+background-color:#000000;
+}
+
+
+
