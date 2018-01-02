@@ -8,7 +8,7 @@ header{
 }
 main{
 	font-family: monospace;
-	
+	font-size: 14px;
 	
 }
 #descr{
@@ -27,7 +27,7 @@ main{
 	float: right;
 	margin: 30px;
 	left: 62vw;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	/*background: #f0f0ca*/
 	 border-style: solid;
