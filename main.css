@@ -18,6 +18,8 @@ main{
 	/*background: #f0f0ca;*/
 	left: 9vw;
 	position: absolute;
+	
+	
 }
 
 #menulateral{
@@ -28,6 +30,8 @@ main{
 	position: absolute;
 	text-align: center;
 	/*background: #f0f0ca*/
+	 border-style: solid;
+	  border-width: 1px;
 }
 
 
